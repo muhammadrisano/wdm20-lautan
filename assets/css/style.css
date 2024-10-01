@@ -1,0 +1,184 @@
+/* 
+font-family: "Poppins", sans-serif;
+font-family: "Inter", sans-serif;
+*/
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+#hero{
+    height: 100vh;
+    background-image: url('../images/bg-lautan.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.container{
+    width: 450px;
+    height: 400px;
+    /* background-color: lightgreen; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.hero-title{
+    color: #355C80;
+    font-size: 64px;
+    font-weight: 500;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+.hero-content{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    line-height: 24px;
+    color: #0A0A0A;
+}
+.wrapper-form{
+    /* background-color: lightpink; */
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 26px;
+}
+
+.wrapper-form input{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: none;
+    padding: 14px 20px;
+    outline: none;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+}
+.wrapper-form button{
+    width: 100%;
+    border-radius: 8px;
+    padding: 14px 20px;
+    border: none;
+    background-color: #355C80;
+    color: white;
+    cursor: pointer;
+    margin-top: 18px;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+}
+.about-title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    color: #355C80;
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper-card{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.card{
+    width: 288px;
+    height: 190px;
+    background-color: #EEF6F8;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.card h4{
+    font-size: 22px;
+    text-align: center;
+    color: #0A0A0A;
+    font-weight: 400;
+    margin-top: 14px;
+}
+
+.card p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #0A0A0A;
+}
+
+#about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer{
+    border-top: 2px solid #355C80;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.footer p{
+    text-align: center;
+    color: #0A0A0A;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+
+/* navbar */
+
+.navbar{
+    font-family: "Inter", sans-serif;
+    color: #355C80;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* background-color: lightskyblue; */
+    box-shadow: 2px 0 2px 1px rgba(0, 0, 0, 0.4);
+}
+.nav-items{
+    list-style: none;
+    display: flex;
+}
+.item a, .brand{
+    text-decoration: none;
+}
+.item a{
+    padding: 18px 24px;
+    font-size: 16px;
+    transition: 0.2s;
+
+}
+.item a:hover{
+    background-color: lightslategray;
+    color: white;
+}
+
+/* tablet */
+@media screen and (max-width: 768px){
+    .wrapper-card{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+/* untuk mobile */
+@media screen and (max-width: 576px){
+    .wrapper-card{
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+    .card{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+}
